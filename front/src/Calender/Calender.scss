@@ -1,0 +1,38 @@
+// CalenderBoard
+.container{
+  display: inline-flex;
+  overflow-x: scroll;
+  width: 100vw;
+  border-left: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+
+  li{
+    list-style: none;
+  }
+}
+
+// CalenderElement
+.calenderElement{
+
+  &__date{
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    display: inline-block;
+    height: 60px;
+    width: 30px;
+
+    &--wday{
+      color: #aaa;
+      height: 25px;
+    }
+  }
+
+  .today{
+    display: inline-block;;
+    line-height: 24px;
+    width: 24px;
+    background-color: #1a73e8;
+    color: #fff;
+    border-radius: 50%;
+  }
+}
